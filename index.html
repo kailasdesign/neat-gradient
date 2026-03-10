@@ -28,22 +28,78 @@ height:100vh;
 <script>
 
 const config = {
-colors: [
-{ color: "#ff6b6b", enabled: true },
-{ color: "#6bc1ff", enabled: true },
-{ color: "#9d6bff", enabled: true }
-],
-speed: 2,
-horizontalPressure: 3,
-verticalPressure: 3,
-waveFrequencyX: 2,
-waveFrequencyY: 2,
-waveAmplitude: 5,
-shadows: 1,
-highlights: 4,
-backgroundColor: "#000000"
+    colors: [
+        {
+            color: '#FFFFFF',
+            enabled: true,
+        },
+        {
+            color: '#E0E0E0',
+            enabled: true,
+        },
+        {
+            color: '#FFFFFF',
+            enabled: true,
+        },
+        {
+            color: '#ff5a5f',
+            enabled: true,
+        },
+        {
+            color: '#c81d25',
+            enabled: true,
+        },
+        {
+            color: '#F90046',
+            enabled: false,
+        },
+    ],
+    speed: 2,
+    horizontalPressure: 4,
+    verticalPressure: 3,
+    waveFrequencyX: 0,
+    waveFrequencyY: 0,
+    waveAmplitude: 0,
+    shadows: 2,
+    highlights: 7,
+    colorBrightness: 1,
+    colorSaturation: 8,
+    wireframe: false,
+    colorBlending: 5,
+    backgroundColor: '#FF0000',
+    backgroundAlpha: 1,
+    grainScale: 0,
+    grainSparsity: 0,
+    grainIntensity: 0,
+    grainSpeed: 0,
+    resolution: 0.5,
+    yOffset: 491,
+    yOffsetWaveMultiplier: 1.5,
+    yOffsetColorMultiplier: 1.8,
+    yOffsetFlowMultiplier: 2,
+    flowDistortionA: 5,
+    flowDistortionB: 7.7,
+    flowScale: 2.6,
+    flowEase: 0.36,
+    flowEnabled: false,
+    mouseDistortionStrength: 0.12,
+    mouseDistortionRadius: 0.25,
+    mouseDecayRate: 0.96,
+    mouseDarken: 0.24,
+    enableProceduralTexture: false,
+    textureVoidLikelihood: 0.22,
+    textureVoidWidthMin: 120,
+    textureVoidWidthMax: 150,
+    textureBandDensity: 1.9,
+    textureColorBlending: 0.12,
+    textureSeed: 333,
+    textureEase: 0.75,
+    proceduralBackgroundColor: '#D0DBFB',
+    textureShapeTriangles: 20,
+    textureShapeCircles: 15,
+    textureShapeBars: 15,
+    textureShapeSquiggles: 10,
 };
-
 new NeatGradient({
 ref: document.getElementById("gradient"),
 ...config
