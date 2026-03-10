@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+html, body{
+margin:0;
+padding:0;
+overflow:hidden;
+}
+
+#gradient{
+width:100vw;
+height:100vh;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="gradient"></div>
+
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="https://unpkg.com/@firecms/neat/dist/neat.min.js"></script>
+
+<script>
+
+const config = {
+colors: [
+{ color: "#ff6b6b", enabled: true },
+{ color: "#6bc1ff", enabled: true },
+{ color: "#9d6bff", enabled: true }
+],
+speed: 2,
+horizontalPressure: 3,
+verticalPressure: 3,
+waveFrequencyX: 2,
+waveFrequencyY: 2,
+waveAmplitude: 5,
+shadows: 1,
+highlights: 4,
+backgroundColor: "#000000"
+};
+
+new NeatGradient({
+ref: document.getElementById("gradient"),
+...config
+});
+
+</script>
+
+</body>
+</html>
